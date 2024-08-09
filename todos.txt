@@ -1,0 +1,3 @@
+1. add a while so that if user inputs invalid input u ask him again for input
+2.add an exit option
+3.
