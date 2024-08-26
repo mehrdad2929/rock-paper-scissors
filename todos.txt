@@ -1,3 +1,13 @@
-1. add a while so that if user inputs invalid input u ask him again for input
-2.add an exit option
-3.
+1.first do it for one round
+2. then figure out how u can do it fo 3 round
+3. then for n round
+
+
+4. for solving it for n rounds of ply ; u can keep track of clicks in other word:
+    first. get number of rounds = n
+    then. after n click on buttuns u print final result
+
+
+
+
+n. when i learnt async i'll revisit it(solve this with functions)!

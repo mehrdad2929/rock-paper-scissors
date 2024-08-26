@@ -1,0 +1,88 @@
+// let humanScore =0;
+// let computerScore =0;
+// const roundsNumber = document.getElementById("rounds-number");
+// const start = document.getElementById('start');
+// start.addEventListener('click' , ()=>{
+    // start.addEventListener('click', ()=>{
+            const humanSide = document.getElementById("human-choice");
+            //human choice
+            let humanChoice;
+            humanSide.addEventListener('click' , (e)=> {
+                let target = e.target;
+                switch (target.id){
+                    case 'rock':
+                        humanChoice = "rock";
+                        alert("rock");
+                        break;
+                    case 'paper':
+                        humanChoice = "paper";
+                        alert("paper");
+                        break;
+                    case 'scissors':
+                        humanChoice = "scissors";
+                        alert("scissors");
+                        break;
+                }
+                console.log(humanChoice);
+            })
+            //computer choice
+            let computerChoice;
+            let numbers= [1,2,3];
+            let randomNumber = numbers[Math.floor(Math.random()*numbers.length)];
+            switch (randomNumber){
+                case 1:
+                    computerChoice = "rock";
+                case 2:
+                    computerChoice = "paper";
+                case 3:
+                    computerChoice = "scissors";
+            } 
+            // this round result
+            const thisRoundResult = document.getElementById(id);
+            let roundResult;
+            if (humanChoice==computerChoice){
+                roundResult =  "tie";
+                thisRoundResult.textContent = "it's a tie!";
+            }
+            else{
+                if(computerChoice=="rock"){
+                    if(humanChoice=="paper"){
+                        roundResult = "human";
+                        // thisRoundResult.textContent += " human";
+                    }else{
+                        roundResult =  "computer";
+                        // thisRoundResult.textContent += " computer";
+                    }
+                }
+                if(computerChoice=="paper"){
+                    if(humanChoice=="scissors"){
+                        roundResult = "human";
+                        // thisRoundResult.textContent += " human";
+                    }else{
+                        roundResult = "computer";
+                        // thisRoundResult.textContent += " computer";
+                    }
+                }
+                if(computerChoice=="scissors"){
+                    if(humanChoice=="rock"){
+                        roundResult = "human";
+                        // thisRoundResult.textContent += " human";
+                    }else{
+                        roundResult = "computer";
+                        // thisRoundResult.textContent += " computer";
+                    }
+                }
+            }
+        
+    // });
+    // final result
+    // if(humanScore>computerScore){
+    //     alert(`congrats you have won ${humanScore}-${computerScore}`)
+    // }
+    // if(computerScore>humanScore){
+    //     alert(`sorry you lost ${humanScore}-${computerScore}`)
+    // }
+    // if(computerScore==humanScore){
+    //     alert(`its a tie.${computerScore}-${humanScore}`)
+    // }
+// })

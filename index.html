@@ -5,11 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script defer src="script.js" ></script>
 </head>
 <body>
-    <script src="script.js">
-
-    </script>
+    <div class="flex-container">
+        <div class="title">
+            <h1>rock paper scissors! </h1>
+        </div>
+        <input type="number" id="rounds-input" min="1" value="5">
+        <button id="start-game">Start Game</button>
+        <div id="score-display"></div>
+        <div id="computer-choice"></div>
+        <div id="round-result"></div>
+        <div id="human-choice">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
+    </div>
 </body>
 </html>
